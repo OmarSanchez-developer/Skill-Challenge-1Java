@@ -1,7 +1,7 @@
 
 public class Pelicula {
     //Atributos de la Clase Pelicula
-    private int id_pelicula;
+    private int idPelicula;
     private String nombre;
     private boolean disponible;
 
@@ -11,18 +11,18 @@ public class Pelicula {
 public Pelicula() {
 }
 //Constructor de Pelicula
-    public Pelicula(int id_pelicula, String nombre, boolean disponible) {
-        this.id_pelicula = id_pelicula;
+    public Pelicula(int idPelicula, String nombre, boolean disponible) {
+        this.idPelicula = idPelicula;
         this.nombre = nombre;
         this.disponible = disponible;
     }
     // --- Métodos Getter y Setter ---
-    public int getId_pelicula() {
-        return id_pelicula;
+    public int getidPelicula() {
+        return idPelicula;
     }
     // Establece un nuevo ID para la película
-    public void setId_pelicula(int id_pelicula) {
-        this.id_pelicula = id_pelicula;
+    public void setidPelicula(int idPelicula) {
+        this.idPelicula = idPelicula;
     }
     // Devuelve el nombre de la película
     public String getnombre() {
@@ -43,6 +43,6 @@ public Pelicula() {
     // Método sobreescrito para imprimir la información de la película en formato de texto
     @Override
     public String toString() {
-        return "Pelicula [ID: " + id_pelicula + " | Nombre: " + nombre + " | Disponible: " + disponible + "\n";
+        return "Pelicula [ID: " + idPelicula + " | Nombre: " + nombre + " | Disponible: " + disponible + "\n";
     }
 }
